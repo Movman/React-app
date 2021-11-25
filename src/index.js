@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
+  // toto NIE JE HTML - ALE JavaScript!
   <React.StrictMode>
     <App />
   </React.StrictMode>,
