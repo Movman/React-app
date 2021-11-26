@@ -1,6 +1,19 @@
+import Header from "../components/Header";
 
-function Home() {
-    return <h1>Home</h1>;
-  }
-  
-  export default Home;
+
+function Home({ text, druha, tretia }) {
+  // for (let i = 0; i < 100; i++) {
+  //   console.log(i);
+  // }
+
+  // console.log(druha, tretia)
+
+  return (
+    <>
+      <Header title={"Home"}/>
+      <p>{text}</p>
+    </>
+  );
+}
+
+export default Home;

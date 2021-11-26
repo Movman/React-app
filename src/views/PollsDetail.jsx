@@ -1,16 +1,29 @@
+import Header from "../components/Header";
+import QuestionDetail from "../components/QuestionDetail";
 
 function PollsDetail() {
-    return (
-    <div>
-      <h1>Polls Detail</h1>
-        <h3>Question 1</h3>
-        <ul>
-          <li>Choice 1</li>
-          <li>Choice 2</li>
-          <li>Choice 3</li>
-        </ul>
-    </div>
-    )
-  }
+  let choices = [
+    {
+        id: 1,
+        text: "Fajn"
+    },
+    {
+        id: 2,
+        text: "Vyborne"
+    },
+    {
+        id: 3,
+        text: "Zle"
+    }
+    ]
+    
 
-  export default PollsDetail;
+    return (
+      <>
+        <Header title={"Detail"}/>
+        <QuestionDetail data={choices}/>
+      </>
+    );
+}
+
+export default PollsDetail;

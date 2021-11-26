@@ -1,16 +1,35 @@
+import Header from "../components/Header";
+import QuestionList from "../components/QuestionList";
+
 // verejne
 function PollsList() {
-    return (
-    <div>
-      <h1>Polls List</h1>
-        <ul>
-          <li>Question 1</li>
-          <li>Question 2</li>
-          <li>Question 3</li>
-        </ul>
-      </div>
-    )
-    
-  }
-  
-  export default PollsList;
+  // normalne si to GETnem zo servere - konretne z API
+  let questions = [
+    {
+      id: 1,
+      question_text: "Ako sa mas?",
+      choices: [
+        {
+          id: 1,
+          text: "Dobre"
+        },
+        {
+          id: 2,
+          text: "Zle"
+        }
+      ]
+    }
+  ]
+  // let questions = ["Q1", "Q2"];
+
+  // console.log(questions);
+
+  return (
+    <>
+      <Header title={"Zoznam"} />
+      <QuestionList data={questions} />
+    </>
+  );
+}
+
+export default PollsList;
