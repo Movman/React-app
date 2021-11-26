@@ -1,6 +1,15 @@
 // verejne
 function PollsList() {
-    return <h1>Polls list</h1>;
+    return <div>
+      <h1>Polls List</h1>
+        <ul>
+          <li>Question 1</li>
+          <li>Question 2</li>
+          <li>Question 3</li>
+        </ul>
+      </div>
+
+    
   }
   
   export default PollsList;
