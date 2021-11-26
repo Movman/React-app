@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 import PollsList from "./views/PollsList";
@@ -30,7 +29,7 @@ function App() {
     // </div>
     <Router>
       <nav>
-        <Link to="/home">Home</Link>
+        <Link to="/">Home</Link>
         <Link to="/list">Zoznam</Link>
         <Link to="/detail">Detail</Link>
       </nav>
@@ -42,7 +41,7 @@ function App() {
           <PollsDetail />
         </Route>
         <Route path="/">
-          <Home />
+          <Home text={"Welcome"} druha={1} tretia={{cislo: 1, text: 'Cau'}}/>
         </Route>
       </Switch>
     </Router>
