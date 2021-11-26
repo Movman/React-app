@@ -1,6 +1,7 @@
 
 function PollsDetail() {
-    return <div>
+    return (
+    <div>
       <h1>Polls Detail</h1>
         <h3>Question 1</h3>
         <ul>
@@ -9,7 +10,7 @@ function PollsDetail() {
           <li>Choice 3</li>
         </ul>
     </div>
-
+    )
   }
 
   export default PollsDetail;

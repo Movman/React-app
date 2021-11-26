@@ -1,6 +1,7 @@
 // verejne
 function PollsList() {
-    return <div>
+    return (
+    <div>
       <h1>Polls List</h1>
         <ul>
           <li>Question 1</li>
@@ -8,7 +9,7 @@ function PollsList() {
           <li>Question 3</li>
         </ul>
       </div>
-
+    )
     
   }
   
